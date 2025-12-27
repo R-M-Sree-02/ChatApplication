@@ -5,8 +5,9 @@ public class Main {
             BLUE = "\u001B[34m", CYAN = "\u001B[36m", BOLD = "\u001B[1m";
 
     public static void main(String[] args) {
-        System.out.println(CYAN + "\n╔════════════════════════════════════╗"
-                + "\n║         WELCOME TO                 ║"
+        System.out.println(CYAN
+                + "\n╔════════════════════════════════════╗"
+                + "\n║           WELCOME TO               ║"
                 + "\n║        ✨ CHAT APP ✨              ║"
                 + "\n╠════════════════════════════════════╣"
                 + "\n║   Connect, Chat & Have Fun! 🎉     ║"
@@ -33,7 +34,7 @@ public class Main {
                 case SIGN_UP:
                     new SignUp().signUp(auth, app);
                     break;
-                    
+
                 case LOGIN:
                     new Login().login(auth, app);
                     break;
