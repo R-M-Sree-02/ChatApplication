@@ -15,7 +15,7 @@ public class SignUp {
                if (auth.isUserExistsWithName(uName)) {
                     System.out.println(Main.RED + "⚠️ Username already exists" + Main.RESET);
                     continue;
-               } else if (!uName.matches("[A-Za-z0-9]{3,}")) {
+               } else if (!uName.matches("[A-Za-z0-9_]{3,}")) {
                     System.out.println(Main.RED + "⚠️ Username atLeast be three letters" + Main.RESET);
                     continue;
                }
